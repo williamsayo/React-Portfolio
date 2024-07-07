@@ -1,0 +1,120 @@
+.contact_inner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left_box {
+    color: var(--mediumgray);
+}
+
+.right_box {
+    width: 40%;
+}
+
+.contact-info li{
+    padding: 1rem;
+}
+
+.left_box li {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.left_box li span {
+    font-size: 18px;
+}
+
+.left_box li h3 {
+    font-size: 1.6rem;
+    color: var(--secondary);
+}
+
+.text {
+    max-width: 450px;
+    margin-bottom: 38px;
+    font-size: 1.3rem;
+}
+
+.img-container{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    /* -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
+}
+
+.right_box form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+.right_box .form-control input,
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 25px;
+    font-family: Open Sans;
+    font-size: 18px;
+    letter-spacing: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    background-color: transparent;
+}
+
+.right_box .form-control input::placeholder,
+textarea::placeholder {
+    color: var(--secondary);
+}
+
+.right_box .form-control textarea {
+    height: 230px;
+}
+
+.svg {
+    height: 30px;
+    width: 30px;
+    color: var(--primary);
+}
+
+@media screen and (max-width: 1100px) {
+    .contact_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .left_box,
+    .right_box {
+        width: 90%;
+        text-wrap: wrap;
+    }
+
+    .right_box .form-control input,
+    textarea {
+        padding: 15px;
+    }
+
+    .left_box li h3 a {
+        font-size: 1.4rem;
+    }
+
+    .text {
+        max-width: unset;
+    }
+}

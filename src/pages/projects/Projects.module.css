@@ -1,0 +1,72 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-tabs {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    padding: 78px 0 40px 0;
+}
+
+.projects-tabs li {
+    display: inline-block;
+    margin: 0 45px 0 0;
+}
+
+.projects-tabs button {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 700;
+    font-family: Josefin Sans;
+    -webkit-transition: all 0.3s ease;
+    transition: all 500ms ease;
+}
+
+.projects-tabs button::after {
+    content: '';
+    display: block;
+    margin-top: 2px;
+    height: 2px;
+    width:0;
+    background-color: var(--black);
+    transition: all 500ms ease;
+}
+
+
+.projects-tabs button:hover::after {
+    width:100%;
+}
+
+button.current {
+    color: #000;
+}
+
+.projects-tabs button:hover {
+    color: #000;
+}
+
+.portfolio-list {
+    display: grid;
+    max-width: 85%;
+    min-width: 50rem;
+    min-height: 30rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 1.2rem;
+    row-gap: 3rem;
+    overflow: hidden;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio-list {
+        min-width: 25rem;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}

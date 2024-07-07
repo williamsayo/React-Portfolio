@@ -1,0 +1,163 @@
+.skill-box {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skills {
+    line-height: 2.5;
+}
+
+.frontend,
+.backend {
+    width: 45%;
+    padding: 7px 0;
+}
+
+.frontend .skill,
+.backend .skill {
+    padding: 7px 0;
+}
+
+.skill span {
+    margin-bottom: 10px;
+}
+
+.frontend {
+    text-align: right;
+}
+
+.backend {
+    text-align: left;
+}
+
+.heading {
+    font-size: 1.6rem;
+}
+
+.frontend .skill-bar {
+    transform: rotate(180deg);
+}
+
+.backend .skill-per {
+    background-color: var(--black);
+}
+
+.skill-bar {
+    height: 8px;
+    background: #d4d4d4;
+    border-radius: 5px;
+}
+
+.skill-per {
+    position: relative;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+    content: attr(level);
+    position: absolute;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    top: -40px;
+    right: -15px;
+}
+
+.frontend .skill-per::before {
+    transform: rotate(180deg);
+    top: 5px;
+}
+
+/* .html {
+    max-width: 90%;
+}
+
+.css,
+.django {
+    max-width: 80%;
+}
+
+.javascript {
+    max-width: 90%;
+}
+
+.tailwind,
+.postgres {
+    max-width: 70%;
+}
+
+.node {
+    max-width: 50%;
+}
+
+.express {
+    max-width: 30%;
+}
+
+.flask {
+    max-width: 65%;
+} */
+
+.skill span {
+    display: flex;
+    align-items: center;
+}
+
+.frontend .skill span {
+    justify-content: flex-end;
+}
+
+.skill img {
+    height: 25px;
+    width: 25px;
+    padding: 0 10px;
+    object-fit: contain;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .skill-box {
+        flex-direction: column;
+        padding: 0 1.2rem 1.2rem 1.2rem;
+        align-items: center;
+    }
+
+    .frontend,
+    .backend {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* .skill {
+        padding: 7px 0;
+    } */
+
+    .frontend .skill span,
+    .backend .skill span {
+        justify-content: initial;
+        /* margin-bottom: 10px; */
+    }
+
+    .frontend .skill-bar {
+        transform: none;
+    }
+
+    .frontend .skill-per::before {
+        transform: none;
+        top: -40px;
+    }
+}

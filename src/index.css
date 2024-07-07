@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+IS:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Boogaloo&family=Jersey+25+Charted&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
+:root {
+    --black: #000;
+    --darkgray: #333232;
+    --mediumgray: #a7a6a6;
+    --ashwhite: #d5d8df;
+    --ash: #999999;
+    --lightgray: #c9c9c9;
+    --primary: #fff;
+    --secondary: #ea4343;
+    --secondary-alpha: rgba(234, 67, 67, 0.3);
+    --offwhite: #faf9f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Quicksand", Arial, sans-serif;
+    background-color: var(--primary);
+    color: var(--black);
+    padding: 13vh 0;
+}
+
+section {
+    min-height: 96vh;
+    box-sizing: border-box;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    width: 100%;
+    clear: both;
+    float: left;
+    padding: 8vh 0 4vh 0;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+#header.sticky {
+    position: fixed;
+}
+
+#home {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    height: 80vh;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#skills {
+    color: var(--black);
+    padding-bottom: 15vh;
+    margin: 0 auto;
+}
+
+#footer {
+    height: auto;
+    background-color: var(--darkgray);
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.section-header {
+    font-family: "Playfair Display", serif;
+    color: var(--secondary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header p {
+    color: var(--lightgray);
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.secondary-btn {
+    text-decoration: none;
+    font-family: "Quicksand", Arial, sans-serif;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    position: relative;
+    padding: 15px 46px;
+    border-radius: 6px;
+    border: 2px solid var(--secondary);
+    white-space: nowrap;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.secondary-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 500ms ease-in-out;
+    background-color: var(--secondary);
+    transform-origin: 0;
+    transform: scaleX(1);
+}
+
+.secondary-btn:hover::before {
+    transform: scaleX(0);
+}
+
+.secondary-btn:hover {
+    color: var(--secondary);
+}
+
+.text-btn {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--darkgray);
+    font-weight: 700;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.text-btn:hover {
+    color: var(--secondary);
+    transition: color 0.3s ease;
+}
+
+svg {
+    height: 22px;
+    width: 22px;
+}
+
+@media screen and (max-width: 1100px) {
+    html {
+        font-size: 14px;
+    }
+
+    #skills,
+    #contact,
+    #home,
+    #projects,
+    #about,
+    section {
+        height: auto;
+    }
+
+    #home {
+        height: 80vh;
+    }
+
+    .section-header p {
+        font-size: 1.4rem;
+    }
+
+    .secondary-btn,
+    .text-btn {
+        font-size: 1.3rem;
+        padding: 15px 30px;
+    }
+
+    svg {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+}

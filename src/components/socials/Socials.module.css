@@ -1,0 +1,19 @@
+.social {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.container a:hover .social {
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: all 500ms ease-in-out;
+}
+
+.container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+.socials_list,.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    color: var(--primary);
+}
+
+.socials_list a svg{
+    color: var(--secondary);
+    margin: 0 .3rem;
+}
