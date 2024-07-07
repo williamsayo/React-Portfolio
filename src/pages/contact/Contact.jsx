@@ -3,6 +3,7 @@ import Button from '../../components/button/Button'
 import classes from './Contact.module.css'
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'sonner'
+import { service_id, template_id, public_key } from '../../util/email-util';
 
 const Contact = () => {
     const form = useRef();
@@ -14,8 +15,8 @@ const Contact = () => {
         })
 
         try {
-            const response = await emailjs.sendForm('service_ilbfgkc', 'template_3x8x3iv', form.current, {
-                publicKey: '4GT_u7B5u0hF9BRxG',
+            const response = await emailjs.sendForm(service_id, template_id, form.current, {
+                publicKey: public_key,
             })
 
             if (response.status === 200 && response.text == "OK") {
