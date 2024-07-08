@@ -18,10 +18,10 @@ const About = () => {
                     </div>
                     <div className={classes.detail_text}>
                         <p>
-                            I am a motivated and versatile individual, always eager to take on new challenges.
-                            With a passion for learning I am dedicated to delivering high-quality results,
-                            With a positive attitude and a growth mindset.
-                            I am ready to make a meaningful contribution and achieve great things.
+                            I am a passionate and dedicated individual, committed to delivering innovative and high-quality designs. 
+                            With a strong foundation in fullstack developement, and a positive attitude and a growth mindset.
+                            I bring a unique blend of creativity, technical expertise, and attention to detail to every project. 
+                            I am always eager to connect and collaborate on exciting new projects. Please feel free to reach out to me through the contact form.
                         </p>
                         <div className={classes.btn_group}>
                             <Button className={'secondary-btn'}>

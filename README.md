@@ -1,8 +1,8 @@
-<h1 align="center">Personal Portfolio Wesite</h1>
+<h1 align="center">Personal Portfolio Website</h1>
 
 [![Site preview](/public/portfolio-1.png)](https://williamsayo-portfolio.web.app/)
 
-My design portfolio to showcase a few projects. Built with [Vite](https://vitejs.dev/) + [React](https://react.dev/). View the [live site](https://williamsayo-portfolio.web.app/)
+My portfolio design, describing a bit about myself and showcasing some skills i have honed over the years and a few projects. Built with [Vite](https://vitejs.dev/) + [React](https://react.dev/) and hosted on firebase. View the [live site](https://williamsayo-portfolio.web.app/)
 
 ## Install & run
 
