@@ -7,12 +7,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+dist
 src/assets
 src/util/*.js
 node_modules
 dist
 dist-ssr
 *.local
+*.firebaserc
+firebase.json
+*.firebase
 
 # Editor directories and files
 .vscode/*

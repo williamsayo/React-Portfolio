@@ -1,6 +1,8 @@
 <h1 align="center">Personal Portfolio Wesite</h1>
 
-[![Site preview](/public/portfolio-1.png)]()
+[![Site preview](/public/portfolio-1.png)](https://williamsayo-portfolio.web.app/)
+
+My design portfolio to showcase a few projects. Built with [Vite](https://vitejs.dev/) + [React](https://react.dev/). View the [live site](https://williamsayo-portfolio.web.app/)
 
 ## Install & run
 
@@ -19,5 +21,5 @@ npm run dev
 <details>
   <summary>How do I get the contact form to work?</summary>
   
-  To get the contact form working create an Email JS account. Then plug in your details service_id,template_id and public_key.
+  To get the contact form working create an Email JS account. Then plug in your SERVICE_ID, TEMPLATE_ID and PUBLIC_KEY.
 </details>
